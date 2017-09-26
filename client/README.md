@@ -1,6 +1,6 @@
-# tab-tracker
+# client
 
-> A Vue.js project
+> client side of Togg Dashboard
 
 ## Build Setup
 
