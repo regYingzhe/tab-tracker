@@ -62,12 +62,4 @@ export default {
 .error {
   color: black;
 }
-
-.toolbar__title {
-  color: white;
-}
-
-.btn__content {
-  color: white;
-}
 </style>
