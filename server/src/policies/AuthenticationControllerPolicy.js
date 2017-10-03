@@ -8,6 +8,7 @@ module.exports = {
         new RegExp('^[a-zA-Z0-9]{8,32}$')
       )
     }
+
     const {error} = Joi.validate(req.body, schema)
 
     if (error) {
