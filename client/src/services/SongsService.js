@@ -2,8 +2,10 @@ import Api from './Api'
 
 export default {
   index () {
-    console.log(Api().get('songs'))
     return Api().get('songs')
+  },
+  show (songId) {
+    return Api().get(`songs/${songId}`)
   },
   post (song) {
     return Api().post('songs', song)

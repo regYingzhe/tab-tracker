@@ -15,6 +15,18 @@ module.exports = {
       })
     }
   },
+  async show (req, res) {
+    try {
+      // console.log('the req in index is')
+      // console.log(req)
+      const song = await Song.findById(req.params.songId)
+      res.send(song)
+    } catch (err) {
+      res.status(500).send({
+        error: 'An error has occured trying to fetch the songs'
+      })
+    }
+  },
   async post (req, res) {
     try {
       console.log('Inside post call songs, requst is: ');
